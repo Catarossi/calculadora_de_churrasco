@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!-- Jaini Purva -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap" rel="stylesheet">
+
+        <!-- Arquivo CSS -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./img/icon.png"></link>
+
+        <title>Calculadora de churrasco</title>
+    </head>
+    <body>
+        <section id="card">
+            <div class="left">
+                <h1>Calculadora de churrasco</h1>
+                <p>
+                    Informe o número de convidados
+                </p>
+                <form>
+                    <label for="homens">Homens</label>
+                    <input type="number" min="0" value="0" step="1" id="qtHomens">
+                    <label for="mulheres">Mulheres</label>
+                    <input type="number" min="0" value="0" step="1" id="qtMulheres">
+                    <label for="crianças">Crianças</label>
+                    <input type="number" min="0" value="0" step="1" id="qtCriancas">
+                </form>
+                    <button class="calcular" onclick="calcular()">Calcular</button>
+            </div>
+            <div class="right">
+                    <img src="./img/Logo.jfif" alt="" id="img">
+            </div>
+
+            <div class="results invisible">
+                <h2>Resultados</h2>
+                <div class="text">
+                    <p>Quantidade de carne bovina: <span id="bovina">0.0</span> Kg</p>
+                    <p>Quantidade de carne de frango: <span id="frango">0.0</span> Kg</p>
+                    <p>Quantidade de linguiça: <span id="linguica">0.0</span> Kg</p>
+                    <p>Quantidade de refrigerante: <span id="refrigerante">0</span> L</p>
+                    <p>Quantidade de cerveja: <span id="cerveja">0</span> L</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="index.js"></script>
+    </body>
+</html>
